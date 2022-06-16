@@ -1,0 +1,25 @@
+.nav-bar {
+    display: flex;
+}
+.nav-bar a {
+   padding: 20px;
+   background: linear-gradient(#0ff, #00f, steelblue);
+   color: #0ff;
+   text-decoration: none;
+   font-size: 18px;
+   border: 1px solid #00ffff;
+   border-radius: 10px ;
+}
+
+.nav-bar a:hover {
+    background: #00aaff;  
+    color: #fff;
+    transition: all 2s ease-in-out;
+}
+
+a.current {
+    background: linear-gradient(#0ff, #00f, #00aaff );
+    transform: scale(0.9); 
+    color: #fff;
+    transition: transform 4s ease-in-out;
+}

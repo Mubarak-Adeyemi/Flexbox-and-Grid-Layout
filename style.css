@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+ --bg-head-btn-color: hsl(0, 0%, 95%);
+ --sedans-bg: hsl(31, 77%, 52%);
+ --suvs-bg: hsl(184, 100%, 22%);
+ --luxury-bg: hsl(179, 100%, 13%);
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 15px;
+    font-family: "Lexend Deca";
+}
+
+
+
+
+/* Cards Container */
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 230px;
+
+}
+
+
+
+.SEDANS,
+.SUVS,
+.LUXURY {
+    padding: 60px;
+}
+
+.SEDANS{
+    background-color: var(--sedans-bg);
+    border-radius: 5px 0 0 5px ;
+}
+.SUVS{
+    background-color:  var(--suvs-bg);
+}
+
+.LUXURY {
+    background-color: var(--luxury-bg);
+    border-radius: 0 5px 5px 0 ;
+}
+
+/* Header Text */
+
+.heading-text {
+    font-family: "Big Shoulders Display";
+    padding: 20px 0;
+    color: var(--bg-head-btn-color);
+}
+/* Paragraph Text */
+.p-text {
+    padding-bottom: 100px;
+    line-height: 25px;
+    color: hsla(0, 0%, 100%, 0.75);
+}
+
+/* Button */
+
+a.btn {
+    padding: 15px 30px;
+    border-radius: 30px;
+    background-color:  var(--bg-head-btn-color);
+    text-decoration: none;
+}
+
+.orange {
+    color: var(--sedans-bg);
+}
+.dark-cyan {
+    color: var(--suvs-bg);
+}
+.v-dark-cyan {
+    color: var(--luxury-bg);
+}
+
+
+
+a.btn:active {
+    background-color: transparent;
+    border: 2px solid var(--bg-head-btn-color);
+    color: var(--bg-head-btn-color);
+}
+
+@media (max-width: 375px) {
+    body {
+        width: 375px;
+        height: auto;
+    }
+    .container {
+        flex-direction: column;
+        margin: 10px;
+    }
+
+    .SEDANS,
+    .SUVS,
+    .LUXURY {
+        border-radius: 5px;
+        margin: 10px 0;
+    }
+}
